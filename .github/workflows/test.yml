@@ -1,0 +1,12 @@
+name: Hello world 2
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+jobs:
+  helloWorld:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: This test has the purpose to understand how to test github actions workflow
+        run: echo "Hello world1"
