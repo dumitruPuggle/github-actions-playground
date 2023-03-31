@@ -1,4 +1,4 @@
-name: CI
+name: Log Changes
 on:
   push: 
     branches: [main]
