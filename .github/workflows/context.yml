@@ -9,4 +9,4 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.5.2
       - name: Get context
-        run: echo ${{ MY_SECRET }}
+        run: echo ${{ env.MY_SECRET }}
