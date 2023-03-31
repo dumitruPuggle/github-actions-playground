@@ -1,0 +1,10 @@
+name: Context
+on: workflow_dispatch
+jobs:
+  getContext:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.5.2
+      - name: Get context
+        run: echo ${{ github }}
